@@ -1,0 +1,19 @@
+body {
+    background-color: grey;
+}
+
+.game-frame {
+    list-style: none;
+}
+.game-frame li {
+    list-style: none;
+    display: inline-block;
+}
+
+.square {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
