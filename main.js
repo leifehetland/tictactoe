@@ -22,8 +22,6 @@ function handleSquareClick(e) {
         console.log(player1, player2);
     } 
     for(var i = 0; i < winningCombo.length; i++) {
-    	for(var j= 0; j < winningCombo[i].length; j++){
-    	};
 	}
 }
 
