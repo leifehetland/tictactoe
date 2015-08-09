@@ -7,21 +7,27 @@ var counter = 0;
 var player1 = [];
 var player2 = [];
 
+
+
 function handleSquareClick(e) {
-    if(this.innerHTML==="") {
+    if(this.innerHTML === "") {
         if (counter % 2 === 0 ) {
             this.innerHTML = "X";
             player1.push(this.id);
-            console.log(player1);
         } else {
             this.innerHTML = "O";
             player2.push(this.id);
-            console.log(player2);
         }
         counter++;
-        console.log(counter);
-    }
+        console.log(player1, player2);
+    } 
+    for(var i = 0; i < winningCombo.length; i++) {
+    	for(var j= 0; j < winningCombo[i].length; j++){
+    	};
+	}
 }
+
+
 
 for(var i = 0; i < squareEl.length; i++) {
     squareEl.item(i).addEventListener("click", handleSquareClick);
