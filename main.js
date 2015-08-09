@@ -1,4 +1,4 @@
-var squares = document.getElementsByClassName("square");
+var squareEl = document.getElementsByClassName("square");
 var winningCombo = [["0","1","2"], ["3","4","5"], ["6","7","8"],
                                     ["0","4","8"],["2","4","6"], ["0","3","6"],
                                     ["1","4","7"],["2","5","8"]];
@@ -11,16 +11,18 @@ function handleSquareClick(e) {
     if(this.innerHTML==="") {
         if (counter % 2 === 0 ) {
             this.innerHTML = "X";
-            console.log(this, this.id);
+            player1.push(this.id);
+            console.log(player1);
         } else {
             this.innerHTML = "O";
-            console.log(this, this.id);
+            player2.push(this.id);
+            console.log(player2);
         }
-        console.log(counter);
         counter++;
+        console.log(counter);
     }
 }
 
-for(var i = 0; i < squares.length; i++) {
-    squares.item(i).addEventListener("click", handleSquareClick);
+for(var i = 0; i < squareEl.length; i++) {
+    squareEl.item(i).addEventListener("click", handleSquareClick);
 }
