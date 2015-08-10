@@ -1,14 +1,22 @@
 body {
-    background-color:grey;
+    background-color: black;
+    font-family: 'Creepster', sans-serif;
+    color: darkgreen;
 }
 
 .container {
     width:400px;
     margin:0 auto;
+    border: 5px solid darkgreen;
+    border-radius: 20px;
 }
+
+
 
 h1 {
     text-align:center;
+    text-shadow: 2px 2px 8px red;
+    font-size: 50px;
 }
 
 .board {
@@ -16,10 +24,11 @@ h1 {
     width:300px;
     margin:0 auto;
     padding:0;
+
 }
 
 .board li {
-    background-color: white;
+    background-color: darkorange;
     list-style:none;
     overflow:hidden;
     display:block;
@@ -29,6 +38,8 @@ h1 {
     border:1px solid red;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    text-shadow: 2px 2px 10px red;
+    border-radius: 5px;
 }
 
 .square {
@@ -36,6 +47,17 @@ h1 {
     font-size:5em;
 }
 
-.reset{
-    
+button{
+    font-family: 'Creepster', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 30px;
+    text-shadow: 2px 2px 8px red;
+    background-color: darkorange;
+    color: black;
+    margin-top: 40px;
+    margin-left: 125px;
+    margin-bottom: 40px;
+    border: 3px solid darkgreen;
+
 }
