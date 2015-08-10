@@ -8,7 +8,7 @@ var player1 = [];
 var player2 = [];
 
 function handleSquareClick(e) {
-    if(this.innerHTML === "") {
+    if(this.innerHTML === "" && (game)) {
         if (counter % 2 === 0 ) {
             this.innerHTML = "X";
             player1.push(this.id);
@@ -24,8 +24,8 @@ function handleSquareClick(e) {
 
 function checkWinner(playerArray) {
     for(var i = 0; i < winningCombo.length; i++) {
-        if( (playerArray.indexOf(winningCombo[i][0]) > -1)&&(playerArray.indexOf(winningCombo[i][1]) > -1 ) && (playerArray.indexOf(winningCombo[i][2]) > -1)) {
-                alert("We have a winner!");
+        if((playerArray.indexOf(winningCombo[i][0]) > -1)&&(playerArray.indexOf(winningCombo[i][1]) > -1 )&&(playerArray.indexOf(winningCombo[i][2]) > -1)) {
+            alert("We have a winner!");
         }
     }
 }
@@ -33,3 +33,4 @@ function checkWinner(playerArray) {
 for(var i = 0; i < squareEl.length; i++) {
     squareEl.item(i).addEventListener("click", handleSquareClick);
 }
+
