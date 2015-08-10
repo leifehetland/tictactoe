@@ -7,6 +7,7 @@ var counter = 0;
 var player1 = [];
 var player2 = [];
 
+
 function handleSquareClick(e) {
     if(this.innerHTML === "" && (game)) {
         if (counter % 2 === 0 ) {
@@ -30,7 +31,19 @@ function checkWinner(playerArray) {
     }
 }
 
+function resetGame(e){
+	for(var i = 0; i < squareEl.length; i++){
+		squareEl.item(i).innerHTML = "";
+	}
+	counter = 0;
+	player1 = [];
+	player2 = [];
+}
+
 for(var i = 0; i < squareEl.length; i++) {
     squareEl.item(i).addEventListener("click", handleSquareClick);
 }
+
+var button = document.getElementById("reset");
+button.onclick = resetGame;
 
