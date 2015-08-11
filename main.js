@@ -57,4 +57,3 @@ for(var i = 0; i < squareEl.length; i++) {
 
 var button = document.getElementById("reset");
 button.onclick = resetGame;
-
