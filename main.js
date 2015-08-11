@@ -41,7 +41,17 @@ function checkWinner(playerArray) {
     }
 }
 
-function resetGame(e){
+// function resetGame(e){
+//     for(var i = 0; i < squareEl.length; i++) {
+//         squareEl.item(i).innerHTML = "";
+//     }
+//     counter = 0;
+//     player1 = [];
+//     player2 = [];
+//     game = true;
+// }
+
+$("#reset").click(function(){
     for(var i = 0; i < squareEl.length; i++) {
         squareEl.item(i).innerHTML = "";
     }
@@ -49,11 +59,11 @@ function resetGame(e){
     player1 = [];
     player2 = [];
     game = true;
-}
+});
 
 for(var i = 0; i < squareEl.length; i++) {
     squareEl.item(i).addEventListener("click", handleSquareClick);
 }
 
-var button = document.getElementById("reset");
-button.onclick = resetGame;
+// var button = document.getElementById("reset");
+// button.onclick = resetGame;
