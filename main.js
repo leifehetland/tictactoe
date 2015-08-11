@@ -42,13 +42,13 @@ function checkWinner(playerArray) {
 }
 
 function resetGame(e){
-	for(var i = 0; i < squareEl.length; i++) {
-		squareEl.item(i).innerHTML = "";
-	}
-	counter = 0;
-	player1 = [];
-	player2 = [];
-            game = true;
+    for(var i = 0; i < squareEl.length; i++) {
+        squareEl.item(i).innerHTML = "";
+    }
+    counter = 0;
+    player1 = [];
+    player2 = [];
+    game = true;
 }
 
 for(var i = 0; i < squareEl.length; i++) {
@@ -57,4 +57,3 @@ for(var i = 0; i < squareEl.length; i++) {
 
 var button = document.getElementById("reset");
 button.onclick = resetGame;
-
